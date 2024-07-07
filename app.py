@@ -6,6 +6,12 @@ from routes.data import data_bp
 from routes.report import report_bp
 
 def create_app():
+    """
+    Create and configure the Flask application.
+
+    Returns:
+        app (Flask): The configured Flask application.
+    """
     app = Flask(__name__)
     app.config.from_object(Config)
 
